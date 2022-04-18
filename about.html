@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
+
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PX1TH9YE8F"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-PX1TH9YE8F');
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/favicon.ico">
+	<!-- Link to Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Link to fontawesome kit -->
+	<script src="https://kit.fontawesome.com/547f0561c5.js" crossorigin="anonymous"></script>
+	<title>ABOUT</title>
+</head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<a href="#main" class="skip">Skip to main content</a>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<li><a href = "index.html" >Home</a></li>
+				<li class="active"><a href = "about.html">About</a></li>
+                <li><a href = "writings.html">Writings</a></li>
+				<li><a href = "awwdelish.html">AwwDelish</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main id="main" class="container">
+		<!-- The h1 is a semantic tag that aids accessibility -->
+		<div class="min-container">
+			<!-- <h1>ABOUT</h1>
+			<hr> -->
+			<p>
+				I am a Graduate Student and a Research Assistant studying Human Computer Interaction at University of Michigan, Ann Arbor.
+				"I believe that curiosity and desire are the keys to gain insights in life."
+				Curiosity towards connection of art, technology, creativity and desire to implement those thoughts into reality drives me each morning to grow more.
+			</p>
+		</div>
+		<div class="min-container">
+			<img src="images/knowshaivi-2.jpg" alt="Girl posing besides the lake bank with the mackinac bridge in the background" width="200"></img>
+		</div>
+		<div class="min-container">
+			<img src="images/knowshaivi-3.jpg" alt="Girl posing in front of a huge true on a sunny day in Ann Arbor" width="200"></img>
+		</div>
+		<div class="min-container">
+			<p>
+				I did my undergrad in Computer Engineering where I learnt various tools, applications, internal systems, coding and important CS concepts.
+				But something that always fascinated me more was the design and the reason why that code is being written.
+				Hence, here I am, an amazing designer with a developer perspective.
+			</p>
+		</div>
+	</main>
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<form action="https://formspree.io/f/mdobdrng" method="POST">
+			<fieldset>
+			  <legend>Let's Talk</legend>
+		  
+			  <label for="name_id">Your Name</label>
+			  <i class="fa-solid fa-user"></i>
+			  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+		  
+			  <label for="email_id">Your Email</label>
+			  <i class="fa-solid fa-envelope"></i>
+			  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+		  
+			  <label for="phone_id">Your Phone Number</label>
+			  <i class="fa-solid fa-phone-flip"></i>
+			  <input type="tel" id="phone_id" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+		  
+			  <label for="msg_id">Leave A Message</label>
+			  <i class="fa-solid fa-message"></i>
+			  <textarea placeholder="Enter your message" id = "msg_id" name="msg" required></textarea><br>
+
+			  <input type="submit" value = "Contact Me">
+			</fieldset>
+		   </form>
+		<p>Shaivi Ajay Ganatra &copy; 2022</p>
+	</footer>
+</body>
+</html>
